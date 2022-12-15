@@ -12,7 +12,7 @@ body {
     min-width: 375px;
     font-family: 'Kumbh Sans', sans-serif;
     background: #F2F2F2;
-    padding: 0px 16px 0px 16px;
+    padding: 0px 165px 0px 165px;
 }
 
 .container {
@@ -66,6 +66,14 @@ li:nth-child(2) {
     display: flex;
     flex-direction: column;
     margin-top: 38px;
+}
+
+.top-section {
+    display: inline-flex;
+}
+
+.article {
+    display: inline-flex;
 }
 
 .article h1 {
