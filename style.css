@@ -9,8 +9,9 @@
     --clr--bg--blue-pink: linear-gradient(180deg, #4851FF 0%, #F02AA6 100%);
     --clr--bg-dark-blue: hsla(234, 53%, 16%, 1);
     /*Hover Color*/
-    --clr-purple: hsla(234, 25%, 52%, 1);
-    --clr-light-gray: hsla(0, 0%, 100%, 0.5);
+    --hover--purple: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+    --hover--pink: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+    --hover--gray: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
     /*Font Sizes*/
     --fs--heading: 3.5rem;
     --fs--title: 1.5rem;
@@ -42,6 +43,7 @@
     border: 0;
     font-weight: 700;
     color: var(--clr--white);
+    cursor: pointer;
 }
 
 h1 {
@@ -54,6 +56,7 @@ h2 {
 
 p {
     color: var(--clr--gray);
+    font-size: 18px;
 }
 
 body {
@@ -87,9 +90,11 @@ header .logo {
 header .button {
     background: var(--clr--dark-blue);
     color: var(--clr--white);
-    font-weight: 700;
-    font-size: 18px;
     margin-top: 24px;
+}
+
+header .button:hover {
+    color: var(--hover--purple);
 }
 
 
@@ -125,6 +130,10 @@ h1 {
     background: var(--clr--bg-pink);
 }
 
+.left-area .button:hover {
+    background: var(--hover--pink);
+}
+
 .showcase-area .right-area {
     position: absolute;
     background-image: url(/assets/image-hero-desktop.png);
@@ -144,6 +153,9 @@ h1 {
 }
 
 .card-area .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     background: var(--clr--white);
     border-radius: 15px;
     width: 350px;
@@ -167,6 +179,7 @@ h1 {
     font-weight: 800;
     line-height: 40px;
     width: 286px;
+    margin-top: -70px;
 }
 
 .card-area .card p {
@@ -180,8 +193,7 @@ h1 {
 
 .card img {
     position: absolute;
-    margin-top: -30px;
-    margin-left: 32px;
+    margin-top: -320px;
 }
 
 
@@ -213,4 +225,9 @@ footer .logo {
 
 footer .button {
     background: var(--clr--bg--blue-pink);
+}
+
+footer .button:hover {
+    background: var(--hover--purple);
+    color: var(--clr--white);
 }
