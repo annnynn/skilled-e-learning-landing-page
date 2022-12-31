@@ -265,6 +265,10 @@ footer .button:hover {
     color: var(--clr--white);
 }
 
+.left-area .button:hover {
+    background: var(--hover--pink);
+}
+
 
 /*Tablet*/
 
@@ -377,6 +381,10 @@ footer .button:hover {
         align-items: center;
         width: 768px;
     }
+    header .button:hover {
+        background: var(--hover-dark-purple);
+        color: var(--clr--white);
+    }
 }
 
 @media (min-width: 1440px) {
@@ -415,10 +423,13 @@ footer .button:hover {
         width: 457px;
     }
     .showcase-img {
-        width: 1200px;
-        background-image: url(/assets/image-hero-desktop.png);
-        background-size: cover;
+        height: 936.91650390625px;
+        width: 991.630859375px;
         margin-left: 280px;
+        margin-top: -220px;
+    }
+    .showcase-img .main-img-dekstop {
+        display: block;
     }
     .grid {
         display: grid;
@@ -436,5 +447,12 @@ footer .button:hover {
         justify-content: space-between;
         align-items: center;
         width: 1440px;
+    }
+    header .button:hover {
+        background: var(--hover-dark-purple);
+        color: var(--clr--white);
+    }
+    .left-area .button:hover {
+        background: var(--hover--pink);
     }
 }
